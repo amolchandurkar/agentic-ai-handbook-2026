@@ -1,0 +1,60 @@
+site_name: Agentic AI Handbook 2026
+site_description: Enterprise Guide to Agentic AI
+site_author: Amol C
+
+theme:
+  name: material
+  language: en
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+nav:
+  - Home: index.md
+
+  - Foundations:
+      - Introduction to AI: Part-01-Foundations/01-Introduction-to-AI.md
+      - Machine Learning: Part-01-Foundations/02-Machine-Learning.md
+      - Deep Learning: Part-01-Foundations/03-Deep-Learning.md
+      - Transformers: Part-01-Foundations/04-Transformers.md
+      - Large Language Models: Part-01-Foundations/05-Large-Language-Models.md
+      - Prompt Engineering: Part-01-Foundations/06-Prompt-Engineering.md
+
+  - Agentic AI:
+      - AI Agents: Part-02-Agentic-AI/07-Agentic-AI.md
+      - Agent Architecture: Part-02-Agentic-AI/08-Agent-Architecture.md
+      - Planning: Part-02-Agentic-AI/09-Planning.md
+      - Reasoning: Part-02-Agentic-AI/10-Reasoning.md
+      - Reflection: Part-02-Agentic-AI/11-Reflection.md
+      - Memory: Part-02-Agentic-AI/12-Memory.md
+
+  - Enterprise AI:
+      - MCP: Part-04-Enterprise/21-MCP.md
+      - A2A: Part-04-Enterprise/22-A2A.md
+      - AI Gateway: Part-04-Enterprise/24-AI-Gateway.md
